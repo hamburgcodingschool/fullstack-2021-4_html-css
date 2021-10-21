@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #headerBox {
+            background-color: lightcoral;
+
+            width: 800px;
+            height: 100px;
+        }
+
+        #wrapper {
+            width: 800px;
+            background-color: yellow;
+
+            margin: 0 auto;
+            /* margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto; */
+        }
+
+        #leftBox {
+            background-color: lightgreen;
+
+            width: 150px;
+            height: 500px;
+
+            float: left;
+        }
+
+        #mainBox {
+            background-color: lightblue;
+
+            width: 630px;
+            height: 480px;
+
+            float: left;
+            padding: 10px;
+        }
+
+        #footerBox {
+            background-color: lightcoral;
+
+            width: 800px;
+            height: 100px;
+        }
+        .clearFix {
+            clear: both;
+        }
+        .imageFloat {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="headerBox">1</div>
+        <div id="leftBox">2</div>
+        <div id="mainBox">
+            <img class="imageFloat" src="https://www.placecage.com/c/200/300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum mollitia totam impedit cum fugit eligendi corporis ad rerum natus ipsa veniam commodi sit rem sequi, adipisci quos laborum. Exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum mollitia totam impedit cum fugit eligendi corporis ad rerum natus ipsa veniam commodi sit rem sequi, adipisci quos laborum. Exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum mollitia totam impedit cum fugit eligendi corporis ad rerum natus ipsa veniam commodi sit rem sequi, adipisci quos laborum. Exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum mollitia totam impedit cum fugit eligendi corporis ad rerum natus ipsa veniam commodi sit rem sequi, adipisci quos laborum. Exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum mollitia totam impedit cum fugit eligendi corporis ad rerum natus ipsa veniam commodi sit rem sequi, adipisci quos laborum. Exercitationem.</p>
+        </div>
+        <div class="clearFix"></div>    
+        <div id="footerBox">4</div>
+    </div>
+</body>
+</html>
