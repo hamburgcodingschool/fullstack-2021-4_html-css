@@ -6,29 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #div1 {
-            position: absolute;
-            top: 0;
-            left: 0;
+        #wrapper {
+            position: relative;
 
+            width: 600px;
+            margin: 50px auto;
+            background-color: yellow;
+        }
+        #div1 {
             width: 200px;
             height: 200px;
             background-color: red;
         }
         #div2 {
             position: absolute;
-            top: 40px;
-            left: 40px;
-            
-            width: 200px;
-            height: 200px;
+            top: -25px;
+            right: -80px;
+
+            width: 100px;
+            height: 100px;
             background-color: green;
         }
         #div3 {
-            position: absolute;
-            top: 80px;
-            left: 80px;
-            
             width: 200px;
             height: 200px;
             background-color: blue;
@@ -36,8 +35,10 @@
     </style>
 </head>
 <body>
-    <div id="div1"></div>
-    <div id="div2"></div>
-    <div id="div3"></div>
+    <div id="wrapper">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
 </body>
 </html>
