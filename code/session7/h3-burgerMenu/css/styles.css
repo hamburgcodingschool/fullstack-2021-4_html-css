@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+
+  background-color: #ebebeb;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 1rem 0;
+}
+
+header {
+  padding: 10px;
+
+  background-color: black;
+  height: 60px;
+
+  position: relative;
+  z-index: 100000;
+}
+
+header > h1 {
+  color: #ebebeb;
+
+  float: left;
+  line-height: 60px;
+}
+
+header > a {
+  color: #ebebeb;
+
+  float: right;
+  font-size: 50px;
+  line-height: 60px;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#sideMenu {
+  top: 80px;
+  right: -300px;
+  position: fixed;
+  z-index: 1000;
+
+  width: 300px;
+  height: calc(100vh - 80px);
+  background-color: pink;
+
+  transition: 5s;
+}
+
+#sideMenu.sideMenuVisible {
+  right: 0;
+}
+
+#sideMenu a {
+  color: red;
+  text-decoration: none;
+}
+
+.topMenu {
+  display: none;
+
+  float: right;
+  padding-right: 20px;
+}
+
+.topMenu li {
+  display: inline;
+}
+
+.topMenu a {
+  color: #ebebeb;
+}
+
+@media (min-width: 601px) {
+  .topMenu {
+    display: block;
+  }
+
+  header > a {
+    display: none;
+  }
+}

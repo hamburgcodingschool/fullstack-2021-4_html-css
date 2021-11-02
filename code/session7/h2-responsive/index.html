@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: red;
+
+            width: 200px;
+            height: 200px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        /* TABLETS */
+        @media (min-width:577px) {
+            #div1 {
+                background-color: green;
+            }   
+        }
+
+        /* DESKTOP */
+        @media (min-width:769px) {
+            #div1 {
+                background-color: blue;
+            }   
+
+            p {
+                font-size: 50px;
+            }
+        }
+
+        /* VERY LARGE SCREENS */
+        @media (min-width:1201px) {
+            #div1 {
+                background-color: pink;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>Hello!</p>
+    </div>
+
+
+    <!-- EXERCISE:
+        Create an element that is Red on Phones, Green on Tablets,
+        Blue on Desktops, Pink on TVs or really big desktops...
+    -->
+</body>
+</html>
