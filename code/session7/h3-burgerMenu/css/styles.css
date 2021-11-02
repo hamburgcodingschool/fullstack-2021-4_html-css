@@ -80,6 +80,7 @@ header > a {
   color: #ebebeb;
 }
 
+/* TABLET AND UP */
 @media (min-width: 601px) {
   .topMenu {
     display: block;
