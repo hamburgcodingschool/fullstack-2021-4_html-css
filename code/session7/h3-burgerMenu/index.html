@@ -18,7 +18,7 @@
                 <li><a href="#">FAQ</a></li>
             </ul>
         </nav>
-        <a href="#" class="burgerButton">=</a>
+        <a href="#" id="burgerButton">=</a>
     </header>
     <div id="sideMenu" class="">
         <ul>
@@ -28,5 +28,15 @@
             <li><a href="#">FAQ</a></li>
         </ul>
     </div>
+
+    <script>
+        const burgerButton = document.getElementById("burgerButton");
+        const sideMenu = document.getElementById("sideMenu");
+        burgerButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            sideMenu.classList.toggle("sideMenuVisible");
+        });
+
+    </script>
 </body>
 </html>

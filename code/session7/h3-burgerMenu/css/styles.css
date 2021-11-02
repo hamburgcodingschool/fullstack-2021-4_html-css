@@ -53,7 +53,7 @@ header > a {
   height: calc(100vh - 80px);
   background-color: pink;
 
-  transition: 5s;
+  transition: 400ms;
 }
 
 #sideMenu.sideMenuVisible {
@@ -86,6 +86,10 @@ header > a {
   }
 
   header > a {
+    display: none;
+  }
+
+  #sideMenu {
     display: none;
   }
 }
