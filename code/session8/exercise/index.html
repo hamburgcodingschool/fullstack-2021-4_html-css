@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        #div1 {
+            width: 200px;
+            min-height: 200px;
+            padding: 10px;
+            background-color: white;
+
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px grey;
+
+            text-align: center;
+        }
+
+        #div1 > img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        @media (min-width: 600px) {
+            #div1 {
+                display: flex;
+                align-items: center;
+
+                text-align: left;
+            }
+        }
+
+        #div2 {
+            width: 200px;
+            padding: 10px;
+            background-color: white;
+
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        #div2 > img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+            display: block;
+            margin: 0 auto;
+        }
+
+        #div2 p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CENTERING AN IMAGE OPTION 1: -->
+    <div id="div1">
+        <img src="images/erin.jpg">
+        <div>
+            <p>Name</p>
+            <p>Profession</p>
+            <p>email...</p>
+            <p>12345678...</p>
+        </div>
+    </div>
+
+    <!-- CENTERING AN IMAGE OPTION 1: -->
+    <!-- <div id="div2">
+        <img src="images/erin.jpg">
+        <div>
+            <p>Name</p>
+            <p>Profession</p>
+            <p>Etc...</p>
+        </div>
+    </div> -->
+
+</body>
+</html>
