@@ -7,20 +7,25 @@
     <title>Document</title>
     <style>
         #gridContainer {
+            background-color: burlywood;
             display: grid;
             grid-gap: 20px;
+            grid-template-columns: 40px 40px auto;
+            /* grid-template-rows: auto 20px; */
+            width: 50%;
+
         }
 
         #gridContainer > div {
-            width: 100px;
-            height: 100px;
+            /* width: 100px; */
+            min-height: 100px;
             background-color: aquamarine;
         }
     </style>
 </head>
 <body>
     <div id="gridContainer">
-        <div>1</div>
+        <div>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br></div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
